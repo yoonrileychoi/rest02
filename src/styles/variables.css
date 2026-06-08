@@ -1,0 +1,47 @@
+:root {
+  /* Main Colors */
+  --dark-pink: #8B1A4A;
+  --royal-pink: #C0396B;
+  --royal-pink-light: #D4547E;
+
+  /* Accent Colors */
+  --baby-blue: #89C4E1;
+  --baby-blue-light: #B8DCF0;
+  --baby-pink: #F4B8C8;
+  --baby-pink-light: #FAD5DF;
+
+  /* Neutrals */
+  --white: #FFFFFF;
+  --off-white: #FDF5F8;
+  --light-gray: #F8F0F4;
+  --gray: #9E8C92;
+  --dark-gray: #3D2B32;
+  --near-black: #1A0D12;
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, var(--dark-pink), var(--royal-pink));
+  --gradient-accent: linear-gradient(135deg, var(--baby-blue), var(--baby-pink));
+  --gradient-hero: linear-gradient(160deg, var(--near-black) 0%, var(--dark-pink) 60%, var(--royal-pink) 100%);
+
+  /* Typography */
+  --font-body: 'Noto Sans KR', sans-serif;
+  --font-heading: 'Montserrat', 'Noto Sans KR', sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 0;
+  --container-width: 1200px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(139, 26, 74, 0.12);
+  --shadow-md: 0 8px 24px rgba(139, 26, 74, 0.18);
+  --shadow-lg: 0 16px 48px rgba(139, 26, 74, 0.24);
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
