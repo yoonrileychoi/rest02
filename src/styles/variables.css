@@ -1,47 +1,53 @@
 :root {
-  /* Main Colors */
-  --dark-pink: #8B1A4A;
-  --royal-pink: #C0396B;
-  --royal-pink-light: #D4547E;
+  /* Sowieso palette */
+  --yellow: #fff48d;
+  --hot-pink: #ff158a;
+  --light-pink: #fd74fd;
+  --pink: #fd97fd;
+  --orange: #fdad70;
+  --mint: #7af7f7;
+  --green: #83f582;
+  --dark: #1d1c1c;
 
-  /* Accent Colors */
-  --baby-blue: #89C4E1;
-  --baby-blue-light: #B8DCF0;
-  --baby-pink: #F4B8C8;
-  --baby-pink-light: #FAD5DF;
-
-  /* Neutrals */
+  /* Legacy variable remapping */
+  --dark-pink: #1d1c1c;
+  --royal-pink: #ff158a;
+  --royal-pink-light: #fd74fd;
+  --baby-blue: #7af7f7;
+  --baby-blue-light: #b8f9f9;
+  --baby-pink: #fd97fd;
+  --baby-pink-light: #ffd6fd;
   --white: #FFFFFF;
-  --off-white: #FDF5F8;
-  --light-gray: #F8F0F4;
-  --gray: #9E8C92;
-  --dark-gray: #3D2B32;
-  --near-black: #1A0D12;
+  --off-white: #fffdf0;
+  --light-gray: #fff8e8;
+  --gray: #5a5858;
+  --dark-gray: #2d2c2c;
+  --near-black: #1d1c1c;
 
   /* Gradients */
-  --gradient-main: linear-gradient(135deg, var(--dark-pink), var(--royal-pink));
-  --gradient-accent: linear-gradient(135deg, var(--baby-blue), var(--baby-pink));
-  --gradient-hero: linear-gradient(160deg, var(--near-black) 0%, var(--dark-pink) 60%, var(--royal-pink) 100%);
+  --gradient-main: linear-gradient(135deg, #ff158a, #fd74fd);
+  --gradient-accent: linear-gradient(135deg, #fff48d, #fdad70);
+  --gradient-hero: linear-gradient(121deg, #ff158a -20.66%, #fff48d 65.83%);
 
   /* Typography */
-  --font-body: 'Noto Sans KR', sans-serif;
-  --font-heading: 'Montserrat', 'Noto Sans KR', sans-serif;
+  --font-body: 'Pretendard Variable', 'Pretendard', sans-serif;
+  --font-heading: 'Pretendard Variable', 'Pretendard', sans-serif;
 
   /* Spacing */
   --section-padding: 100px 0;
   --container-width: 1200px;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(139, 26, 74, 0.12);
-  --shadow-md: 0 8px 24px rgba(139, 26, 74, 0.18);
-  --shadow-lg: 0 16px 48px rgba(139, 26, 74, 0.24);
+  /* Neobrutalist shadows */
+  --shadow-sm: 0 3px 0 #1d1c1c;
+  --shadow-md: 0 6px 0 #1d1c1c;
+  --shadow-lg: 0 8px 0 #1d1c1c;
 
   /* Border radius */
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
   --radius-full: 9999px;
 
   /* Transitions */
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

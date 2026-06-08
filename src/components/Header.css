@@ -6,13 +6,14 @@
   z-index: 1000;
   padding: 20px 0;
   transition: var(--transition);
+  background: rgba(255, 255, 255, 0);
 }
 
 .header.scrolled {
-  background: rgba(26, 13, 18, 0.95);
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
   padding: 14px 0;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.08), 0 4px 16px rgba(15, 23, 42, 0.06);
 }
 
 .header-inner {
@@ -30,18 +31,15 @@
 
 .logo-main {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 900;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--near-black);
   letter-spacing: 2px;
 }
 
 .logo-sub {
-  font-size: 0.7rem;
-  color: var(--baby-pink);
+  font-size: 0.65rem;
+  color: var(--gray);
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -53,8 +51,8 @@
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.95rem;
+  color: var(--dark-gray);
+  font-size: 0.92rem;
   font-weight: 500;
   position: relative;
   padding-bottom: 4px;
@@ -67,7 +65,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gradient-accent);
+  background: var(--royal-pink);
   transition: var(--transition);
 }
 
@@ -76,11 +74,11 @@
 }
 
 .nav-link:hover {
-  color: var(--baby-pink);
+  color: var(--royal-pink);
 }
 
 .nav-cta {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   padding: 10px 24px;
 }
 
@@ -88,7 +86,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--white);
+  color: var(--near-black);
   font-size: 1.4rem;
   cursor: pointer;
   padding: 4px;
@@ -105,14 +103,15 @@
     right: -100%;
     width: 280px;
     height: 100vh;
-    background: var(--near-black);
+    background: var(--white);
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 40px 32px;
     gap: 28px;
     transition: right 0.35s ease;
-    border-left: 1px solid rgba(192, 57, 107, 0.3);
+    border-left: 1px solid var(--light-gray);
+    box-shadow: -8px 0 32px rgba(15, 23, 42, 0.1);
   }
 
   .nav.nav-open {
@@ -121,6 +120,6 @@
 
   .nav-link {
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--dark-gray);
   }
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from 'react-icons/fa';
+import { FiPhone, FiMail, FiMapPin, FiClock, FiSend } from 'react-icons/fi';
 import './Contact.css';
 
 export default function Contact() {
@@ -32,28 +32,28 @@ export default function Contact() {
 
               <div className="info-items">
                 <div className="info-item">
-                  <span className="info-icon"><FaPhone /></span>
+                  <span className="info-icon"><FiPhone /></span>
                   <div>
                     <p className="info-label">전화 문의</p>
                     <p className="info-value">02-1234-5678</p>
                   </div>
                 </div>
                 <div className="info-item">
-                  <span className="info-icon"><FaEnvelope /></span>
+                  <span className="info-icon"><FiMail /></span>
                   <div>
                     <p className="info-label">이메일</p>
                     <p className="info-value">avabrownbb@gmail.com</p>
                   </div>
                 </div>
                 <div className="info-item">
-                  <span className="info-icon"><FaMapMarkerAlt /></span>
+                  <span className="info-icon"><FiMapPin /></span>
                   <div>
                     <p className="info-label">주소</p>
                     <p className="info-value">서울특별시 강남구 테헤란로 123</p>
                   </div>
                 </div>
                 <div className="info-item">
-                  <span className="info-icon"><FaClock /></span>
+                  <span className="info-icon"><FiClock /></span>
                   <div>
                     <p className="info-label">운영시간</p>
                     <p className="info-value">평일 09:00 – 18:00</p>
@@ -66,7 +66,7 @@ export default function Contact() {
           <div className="contact-form-wrap">
             {sent ? (
               <div className="form-success">
-                <FaPaperPlane className="success-icon" />
+                <FiSend className="success-icon" />
                 <h3>문의가 접수되었습니다!</h3>
                 <p>빠른 시간 내에 답변 드리겠습니다.</p>
                 <button className="btn-primary" onClick={() => setSent(false)}>
@@ -132,7 +132,7 @@ export default function Contact() {
                   />
                 </div>
                 <button type="submit" className="btn-primary form-submit">
-                  문의 보내기 <FaPaperPlane />
+                  문의 보내기 <FiSend />
                 </button>
               </form>
             )}

@@ -1,23 +1,22 @@
-import { FaArrowRight, FaPlay } from 'react-icons/fa';
+import heroImg from '../assets/hero.svg';
+import { FiArrowRight } from 'react-icons/fi';
 import './Hero.css';
 
 export default function Hero() {
   return (
     <section id="home" className="hero">
-      <div className="hero-bg">
-        <div className="hero-blob hero-blob-1" />
-        <div className="hero-blob hero-blob-2" />
-        <div className="hero-grid" />
+      <div className="hero-image-wrap">
+        <img src={heroImg} alt="YJ Solutions" className="hero-img" />
       </div>
 
-      <div className="container hero-content">
+      <div className="container hero-text">
         <div className="hero-badge">
           <span className="badge-dot" />
           2025년 창업 · IT 전문 기업
         </div>
 
         <h1 className="hero-title">
-          혁신적인 IT 솔루션으로<br />
+          감각적인 IT 솔루션으로<br />
           <span className="hero-title-accent">비즈니스를 성장</span>시키다
         </h1>
 
@@ -28,11 +27,10 @@ export default function Hero() {
 
         <div className="hero-actions">
           <a href="#contact" className="btn-primary">
-            무료 상담 신청 <FaArrowRight />
+            무료 상담 신청 <FiArrowRight />
           </a>
-          <a href="#portfolio" className="hero-play-btn">
-            <span className="play-icon"><FaPlay /></span>
-            포트폴리오 보기
+          <a href="#portfolio" className="hero-link">
+            포트폴리오 보기 →
           </a>
         </div>
 
@@ -52,11 +50,6 @@ export default function Hero() {
             <span className="stat-label">고객사</span>
           </div>
         </div>
-      </div>
-
-      <div className="hero-scroll-indicator">
-        <div className="scroll-line" />
-        <span>스크롤</span>
       </div>
     </section>
   );

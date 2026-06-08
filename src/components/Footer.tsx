@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaHeart } from 'react-icons/fa';
+import { FiGithub, FiLinkedin, FiInstagram, FiHeart } from 'react-icons/fi';
 import './Footer.css';
 
 export default function Footer() {
@@ -16,9 +16,9 @@ export default function Footer() {
               종합 IT 솔루션 기업입니다.
             </p>
             <div className="footer-social">
-              <a href="#" aria-label="GitHub"><FaGithub /></a>
-              <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-              <a href="#" aria-label="Instagram"><FaInstagram /></a>
+              <a href="#" aria-label="GitHub"><FiGithub /></a>
+              <a href="#" aria-label="LinkedIn"><FiLinkedin /></a>
+              <a href="#" aria-label="Instagram"><FiInstagram /></a>
             </div>
           </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="footer-bottom">
           <p>© 2025 – 2026 YJ Solutions. All rights reserved.</p>
           <p className="footer-made">
-            Made with <FaHeart className="heart" /> by YJ Team
+            Made with <FiHeart className="heart" /> by YJ Team
           </p>
         </div>
       </div>

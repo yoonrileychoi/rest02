@@ -1,4 +1,4 @@
-import { FaCheckCircle, FaCalendarAlt, FaUsers, FaTrophy } from 'react-icons/fa';
+import { FiCheckCircle, FiCalendar, FiUsers, FiAward } from 'react-icons/fi';
 import './About.css';
 
 const milestones = [
@@ -28,7 +28,7 @@ export default function About() {
           <div className="about-info">
             <div className="about-card">
               <div className="about-icon-row">
-                <span className="about-icon"><FaCalendarAlt /></span>
+                <span className="about-icon"><FiCalendar /></span>
                 <div>
                   <p className="about-label">창립일</p>
                   <p className="about-value">2025년 6월 8일</p>
@@ -43,7 +43,7 @@ export default function About() {
               <ul className="about-values">
                 {values.map(v => (
                   <li key={v}>
-                    <FaCheckCircle className="check-icon" />
+                    <FiCheckCircle className="check-icon" />
                     {v}
                   </li>
                 ))}
@@ -52,12 +52,12 @@ export default function About() {
 
             <div className="about-stats-row">
               <div className="mini-stat">
-                <FaUsers className="mini-icon" />
+                <FiUsers className="mini-icon" />
                 <span className="mini-num">100+</span>
                 <span className="mini-label">누적 고객사</span>
               </div>
               <div className="mini-stat">
-                <FaTrophy className="mini-icon" />
+                <FiAward className="mini-icon" />
                 <span className="mini-num">200+</span>
                 <span className="mini-label">완료 프로젝트</span>
               </div>

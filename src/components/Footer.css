@@ -1,7 +1,8 @@
 .footer {
-  background: var(--near-black);
-  color: rgba(255, 255, 255, 0.7);
+  background: var(--yellow);
+  color: var(--dark);
   padding: 80px 0 0;
+  border-top: 2px solid var(--dark);
 }
 
 .footer-grid {
@@ -9,7 +10,7 @@
   grid-template-columns: 1.8fr 1fr 1fr 1fr;
   gap: 48px;
   padding-bottom: 60px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1.5px solid rgba(29, 28, 28, 0.2);
 }
 
 .footer-brand .footer-logo {
@@ -23,25 +24,24 @@
   font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 900;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--dark);
   letter-spacing: 2px;
 }
 
 .footer-brand .logo-sub {
   font-size: 0.7rem;
-  color: var(--baby-pink);
+  color: var(--hot-pink);
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .footer-tagline {
   font-size: 0.88rem;
   line-height: 1.75;
   margin-bottom: 24px;
-  opacity: 0.6;
+  color: var(--dark);
+  opacity: 0.65;
 }
 
 .footer-social {
@@ -53,26 +53,30 @@
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1.5px solid var(--dark);
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--dark);
   transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 .footer-social a:hover {
-  border-color: var(--royal-pink);
-  color: var(--baby-pink);
-  background: rgba(192, 57, 107, 0.1);
+  background: var(--hot-pink);
+  border-color: var(--dark);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .footer-links h4 {
   font-family: var(--font-heading);
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--dark);
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -87,12 +91,15 @@
 .footer-links li,
 .footer-links a {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--dark);
+  opacity: 0.6;
   transition: var(--transition);
+  font-weight: 500;
 }
 
 .footer-links a:hover {
-  color: var(--baby-pink);
+  color: var(--hot-pink);
+  opacity: 1;
   padding-left: 4px;
 }
 
@@ -102,9 +109,11 @@
   align-items: center;
   padding: 24px 0;
   font-size: 0.82rem;
-  opacity: 0.45;
+  color: var(--dark);
+  opacity: 0.55;
   flex-wrap: wrap;
   gap: 8px;
+  font-weight: 500;
 }
 
 .footer-made {
@@ -114,8 +123,9 @@
 }
 
 .heart {
-  color: var(--royal-pink);
+  color: var(--hot-pink);
   animation: heartbeat 1.5s ease-in-out infinite;
+  opacity: 1;
 }
 
 @keyframes heartbeat {

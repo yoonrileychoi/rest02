@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FiExternalLink } from 'react-icons/fi';
 import './Portfolio.css';
 
 const categories = ['전체', '웹 개발', '프로그램 개발', '쇼핑몰'];
@@ -90,7 +90,7 @@ export default function Portfolio() {
                     {p.tags.map(t => <span key={t} className="card-tag">{t}</span>)}
                   </div>
                   <button className="card-link">
-                    <FaExternalLinkAlt />
+                    <FiExternalLink />
                   </button>
                 </div>
               </div>

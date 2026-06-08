@@ -14,7 +14,7 @@
 .filter-btn {
   padding: 10px 24px;
   border-radius: var(--radius-full);
-  border: 2px solid rgba(139, 26, 74, 0.15);
+  border: 1.5px solid var(--dark);
   background: transparent;
   color: var(--gray);
   font-size: 0.9rem;
@@ -41,7 +41,7 @@
 .portfolio-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(139, 26, 74, 0.08);
+  border: 1px solid rgba(29, 28, 28, 0.08);
   transition: var(--transition);
   background: var(--white);
 }
@@ -130,7 +130,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid rgba(139, 26, 74, 0.2);
+  border: 1px solid rgba(29, 28, 28, 0.15);
   background: transparent;
   color: var(--royal-pink);
   display: flex;
